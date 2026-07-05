@@ -75,6 +75,28 @@
     color: var(--color-accent-cyan);
   }
 
+  /* Shimmer sweep — a bright cyan band slides across the clipped text. */
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      var(--color-text-secondary) 0%,
+      var(--color-text-primary) 40%,
+      var(--color-accent-cyan) 50%,
+      var(--color-text-primary) 60%,
+      var(--color-text-secondary) 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: text-shimmer 6s linear infinite;
+  }
+
+  @keyframes text-shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
   ::-webkit-scrollbar { width: 8px; }
   ::-webkit-scrollbar-track { background: var(--color-void); }
   ::-webkit-scrollbar-thumb {

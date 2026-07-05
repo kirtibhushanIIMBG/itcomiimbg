@@ -112,14 +112,14 @@ export function Opening() {
 
         <h1
           data-anim="line"
-          className="max-w-4xl font-display text-4xl font-semibold uppercase leading-[1.05] tracking-[0.06em] text-text-primary sm:text-5xl md:text-6xl lg:text-7xl"
+          className="text-shimmer max-w-4xl font-display text-4xl font-semibold uppercase leading-[1.05] tracking-[0.06em] sm:text-5xl md:text-6xl lg:text-7xl"
         >
           Indian Institute of<br />Management
         </h1>
 
         <p
           data-anim="line"
-          className="mt-6 font-display text-lg font-medium uppercase tracking-[0.4em] text-text-primary/85 md:text-2xl"
+          className="text-shimmer mt-6 font-display text-lg font-medium uppercase tracking-[0.4em] md:text-2xl"
         >
           Bodh Gaya
         </p>
@@ -131,7 +131,7 @@ export function Opening() {
 
         <p
           data-anim="line"
-          className="mt-8 font-display text-2xl font-semibold uppercase tracking-[0.45em] text-text-primary/85 md:text-4xl lg:text-5xl"
+          className="text-shimmer mt-8 font-display text-2xl font-semibold uppercase tracking-[0.45em] md:text-4xl lg:text-5xl"
         >
           IT Committee
         </p>
