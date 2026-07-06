@@ -13,6 +13,7 @@ import samantPhoto from '@/assets/administration/samant-saurabh.jpg'
 import prabhatPhoto from '@/assets/administration/prabhat-ranjan.jpg'
 import boudhayanPhoto from '@/assets/administration/boudhayan-ganguly.jpg'
 import manaliPhoto from '@/assets/administration/manali-chatterjee.jpg'
+import abhijeetPhoto from '@/assets/administration/abhijeet-singh.jpg'
 
 // Staff photos
 import somnathPhoto from '@/assets/staff/somnath-nayek.jpg'
@@ -20,7 +21,6 @@ import shashiPhoto from '@/assets/staff/shashi-arya.jpg'
 import vikashPhoto from '@/assets/staff/vikash-thakur.jpg'
 import kritwashaPhoto from '@/assets/staff/kritwasha-rai.jpg'
 import gauravPhoto from '@/assets/staff/kumar-gaurav.jpg'
-import shivaPhoto from '@/assets/staff/shiva-sirohi.jpg'
 
 // Event photos
 import promptWars from '@/assets/events/prompt-wars.jpg'
@@ -210,7 +210,6 @@ export const itSupport: Person[] = [
   { name: 'Vikash Kumar Thakur', role: 'Web Designer', initials: 'VT', photo: vikashPhoto },
   { name: 'Kritwasha Rai', role: 'IT & Computer Assistant', initials: 'KR', photo: kritwashaPhoto },
   { name: 'Kumar Gaurav', role: 'IT & Computer Assistant', initials: 'KG', photo: gauravPhoto },
-  { name: 'Shiva Kant Sirohi', role: 'Graduate Trainee', initials: 'SS', photo: shivaPhoto },
 ]
 
 // ── IT Administration (sequential order from the members folder) ──
@@ -219,6 +218,7 @@ export const administration: Person[] = [
   { name: 'Prof. Prabhat Ranjan', role: 'Member · Student ERP', initials: 'PR', photo: prabhatPhoto },
   { name: 'Prof. Boudhayan Ganguly', role: 'Member · Short Term Programmes & Web Portals', initials: 'BG', photo: boudhayanPhoto },
   { name: 'Prof. Manali Chatterjee', role: 'Member · AI Initiatives', initials: 'MC', photo: manaliPhoto },
+  { name: 'Mr. Abhijeet Singh', role: 'Member', initials: 'AS', photo: abhijeetPhoto },
 ]
 
 // ── Page 7: Who we look for ──────────────────────────────────────
@@ -276,6 +276,17 @@ export const pocs: Person[] = [
 
 export const contact = {
   email: 'it.com@iimbg.ac.in',
+}
+
+export const socials = {
+  instagram: {
+    handle: 'itcomm.iimbg',
+    url: 'https://www.instagram.com/itcomm.iimbg?igsh=Mmp4YXFqYzVyYzQy',
+  },
+  linkedin: {
+    handle: 'IT Committee | IIM Bodh Gaya',
+    url: 'https://www.linkedin.com/company/it-committee-iim-bodh-gaya/',
+  },
 }
 
 export const sections = [

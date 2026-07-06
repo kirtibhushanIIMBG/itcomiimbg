@@ -27,7 +27,7 @@ export function Administration() {
           ERP, web portals, short-term programmes, and AI initiatives.
         </p>
 
-        <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
           {administration.map((p) => (
             <figure key={p.name} data-reveal className="group glass overflow-hidden rounded-2xl">
               <div className="relative aspect-[4/5] overflow-hidden">

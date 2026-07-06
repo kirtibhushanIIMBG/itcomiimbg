@@ -1,7 +1,12 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import { Magnetic } from '@/components/Magnetic'
-import { pocs, contact, brand, brandAssets } from '@/lib/content'
+import { pocs, contact, brand, brandAssets, socials } from '@/lib/content'
+
+// Served from /public so the dotLottie files are always copied to the build verbatim.
+const instagramLottie = '/instagram.lottie'
+const linkedinLottie = '/linkedin.lottie'
 import { useRevealReplay } from '@/lib/motion'
-import { ArrowUpRight, Phone } from 'lucide-react'
+import { ArrowUpRight, Phone, Sparkles } from 'lucide-react'
 
 export function Contact() {
   const ref = useRevealReplay<HTMLDivElement>({
@@ -57,6 +62,63 @@ export function Contact() {
                 size={18}
                 className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-accent-cyan"
               />
+            </a>
+          </Magnetic>
+        </div>
+
+        {/* Follow Us */}
+        <div
+          data-reveal
+          className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row sm:flex-wrap"
+        >
+          {/* Follow Us icon + label */}
+          <div className="flex items-center gap-2 text-text-primary">
+            <Sparkles
+              size={22}
+              className="animate-[spin_5s_linear_infinite] text-accent-cyan md:h-6 md:w-6"
+            />
+            <span className="font-display text-sm font-semibold uppercase tracking-[0.25em] md:text-base">
+              Follow Us
+            </span>
+          </div>
+
+          {/* Instagram */}
+          <Magnetic>
+            <a
+              href={socials.instagram.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass group inline-flex items-center gap-3 rounded-full px-6 py-3.5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(236,72,153,0.35)] md:gap-4 md:px-7 md:py-4"
+            >
+              <DotLottieReact
+                src={instagramLottie}
+                loop
+                autoplay
+                className="h-9 w-9 shrink-0 md:h-11 md:w-11 lg:h-12 lg:w-12"
+              />
+              <span className="font-display text-sm font-medium text-text-primary md:text-base lg:text-lg">
+                {socials.instagram.handle}
+              </span>
+            </a>
+          </Magnetic>
+
+          {/* LinkedIn */}
+          <Magnetic>
+            <a
+              href={socials.linkedin.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass group inline-flex items-center gap-3 rounded-full px-6 py-3.5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] md:gap-4 md:px-7 md:py-4"
+            >
+              <DotLottieReact
+                src={linkedinLottie}
+                loop
+                autoplay
+                className="h-9 w-9 shrink-0 md:h-11 md:w-11 lg:h-12 lg:w-12"
+              />
+              <span className="font-display text-sm font-medium text-text-primary md:text-base lg:text-lg">
+                {socials.linkedin.handle}
+              </span>
             </a>
           </Magnetic>
         </div>
