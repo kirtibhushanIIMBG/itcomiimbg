@@ -1,5 +1,5 @@
 import { Section, Eyebrow, Glow } from '@/components/primitives'
-import { administration } from '@/lib/content'
+import { itSupport } from '@/lib/content'
 import { useRevealReplay } from '@/lib/motion'
 
 export function Administration() {
@@ -14,21 +14,20 @@ export function Administration() {
       <Glow className="left-[-8%] top-[15%] h-[420px] w-[420px]" color="var(--color-accent-primary)" />
       <div ref={ref}>
         <div data-reveal>
-          <Eyebrow n="05">IT Administration</Eyebrow>
+          <Eyebrow n="05">IT Department</Eyebrow>
         </div>
         <h2
           data-reveal
           className="max-w-3xl font-display text-3xl font-semibold tracking-tight text-text-primary sm:text-4xl md:text-5xl"
         >
-          The <span className="text-gradient">administration</span> steering the committee.
+          The <span className="text-gradient">department</span> steering the committee.
         </h2>
         <p data-reveal className="mt-5 max-w-2xl text-base leading-relaxed text-text-secondary md:text-lg">
-          The faculty and administration who guide the IT Committee’s direction across
-          ERP, web portals, short-term programmes, and AI initiatives.
+          The full-time professionals who run the institute's systems alongside the committee.
         </p>
 
         <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
-          {administration.map((p) => (
+          {itSupport.map((p) => (
             <figure key={p.name} data-reveal className="group glass overflow-hidden rounded-2xl">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
