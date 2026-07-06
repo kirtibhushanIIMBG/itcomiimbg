@@ -22,3 +22,6 @@ pnpm-debug.log*
 # Env / local
 *.local
 .env
+
+# Separate Lovable project — not part of this repo
+Campus Navigator/

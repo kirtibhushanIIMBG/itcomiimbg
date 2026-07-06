@@ -8,6 +8,7 @@ import { Support } from '@/sections/Support'
 import { Members } from '@/sections/Members'
 import { Events } from '@/sections/Events'
 import { Leadership } from '@/sections/Leadership'
+import { Administration } from '@/sections/Administration'
 import { Recruitment } from '@/sections/Recruitment'
 import { Contact } from '@/sections/Contact'
 
@@ -16,7 +17,7 @@ export default function App() {
 
   return (
     <main className="relative bg-void">
-      {/* Fixed animated Particles background — sits behind pages 2–8.
+      {/* Fixed animated Particles background — sits behind pages 2–9.
           Page 1 (Opening) has its own opaque campus image covering this. */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <Particles
@@ -37,6 +38,7 @@ export default function App() {
       <Purpose />
       <Support />
       <Leadership />
+      <Administration />
       <Members />
       <Events />
       <Recruitment />

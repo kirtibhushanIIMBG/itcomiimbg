@@ -73,7 +73,7 @@ export function Recruitment() {
       <Glow className="left-1/2 top-[-5%] h-[500px] w-[500px] -translate-x-1/2" color="var(--color-accent-purple)" />
       <div ref={root} className="text-center">
         <div data-anim className="flex justify-center">
-          <Eyebrow n="07">Who We Look For</Eyebrow>
+          <Eyebrow n="08">Who We Look For</Eyebrow>
         </div>
         <h2
           data-anim

@@ -8,6 +8,12 @@ import support1 from '@/assets/support/support-1.jpg'
 import support2 from '@/assets/support/support-2.jpg'
 import ecapPortal from '@/assets/work/ecap-portal.jpg'
 
+// IT Administration photos (sequential order)
+import samantPhoto from '@/assets/administration/samant-saurabh.jpg'
+import prabhatPhoto from '@/assets/administration/prabhat-ranjan.jpg'
+import boudhayanPhoto from '@/assets/administration/boudhayan-ganguly.jpg'
+import manaliPhoto from '@/assets/administration/manali-chatterjee.jpg'
+
 // Staff photos
 import somnathPhoto from '@/assets/staff/somnath-nayek.jpg'
 import shashiPhoto from '@/assets/staff/shashi-arya.jpg'
@@ -207,6 +213,14 @@ export const itSupport: Person[] = [
   { name: 'Shiva Kant Sirohi', role: 'Graduate Trainee', initials: 'SS', photo: shivaPhoto },
 ]
 
+// ── IT Administration (sequential order from the members folder) ──
+export const administration: Person[] = [
+  { name: 'Prof. Samant Saurabh', role: 'IT Co-Chairperson', initials: 'SS', photo: samantPhoto },
+  { name: 'Prof. Prabhat Ranjan', role: 'Member · Student ERP', initials: 'PR', photo: prabhatPhoto },
+  { name: 'Prof. Boudhayan Ganguly', role: 'Member · Short Term Programmes & Web Portals', initials: 'BG', photo: boudhayanPhoto },
+  { name: 'Prof. Manali Chatterjee', role: 'Member · AI Initiatives', initials: 'MC', photo: manaliPhoto },
+]
+
 // ── Page 7: Who we look for ──────────────────────────────────────
 export type RoleIconId =
   | 'developers'
@@ -269,10 +283,11 @@ export const sections = [
   { n: '02', label: 'What We Do', id: 'purpose' },
   { n: '03', label: 'Support', id: 'support' },
   { n: '04', label: 'Leadership', id: 'leadership' },
-  { n: '05', label: 'Members', id: 'members' },
-  { n: '06', label: 'Events', id: 'events' },
-  { n: '07', label: 'Recruitment', id: 'recruitment' },
-  { n: '08', label: 'Thank You', id: 'contact' },
+  { n: '05', label: 'Administration', id: 'administration' },
+  { n: '06', label: 'Members', id: 'members' },
+  { n: '07', label: 'Events', id: 'events' },
+  { n: '08', label: 'Recruitment', id: 'recruitment' },
+  { n: '09', label: 'Thank You', id: 'contact' },
 ]
 
 function initialsOf(name: string): string {

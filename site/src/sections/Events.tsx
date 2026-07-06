@@ -59,7 +59,7 @@ export function Events() {
       <Glow className="left-[-10%] top-[8%] h-[420px] w-[420px]" color="var(--color-accent-primary)" />
       <div ref={root}>
         <div data-anim>
-          <Eyebrow n="06">On the Ground</Eyebrow>
+          <Eyebrow n="07">On the Ground</Eyebrow>
         </div>
         <div className="mb-14 flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <h2

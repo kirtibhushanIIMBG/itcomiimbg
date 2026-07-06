@@ -14,7 +14,7 @@ export function Members() {
   return (
     <Section id="members" grid className="bg-surface-100/58 !py-16 md:!py-20">
       <Glow className="right-[-6%] top-[20%] h-[380px] w-[380px]" color="var(--color-accent-purple)" />
-      <Eyebrow n="05">The Committee</Eyebrow>
+      <Eyebrow n="06">The Committee</Eyebrow>
       <div className="mb-6 flex flex-col justify-between gap-2 md:mb-8 md:flex-row md:items-end">
         <h2 className="font-display text-2xl font-semibold tracking-tight text-text-primary sm:text-3xl md:text-4xl">
           Seventeen students. <span className="text-gradient">One committee.</span>
