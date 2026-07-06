@@ -2,6 +2,7 @@ import { Section, Eyebrow, Glow } from '@/components/primitives'
 import { chairperson, administration } from '@/lib/content'
 import { useRevealReplay } from '@/lib/motion'
 
+/** Leadership & IT Administration — Chairperson + the faculty who steer the committee. */
 export function Leadership() {
   const ref = useRevealReplay<HTMLDivElement>({
     variant: 'blur',
@@ -14,7 +15,7 @@ export function Leadership() {
       <Glow className="right-[-8%] bottom-[10%] h-[420px] w-[420px]" color="var(--color-accent-cyan)" />
       <div ref={ref}>
         <div data-reveal>
-          <Eyebrow n="04">Leadership & Department</Eyebrow>
+          <Eyebrow n="04">Leadership & Administration</Eyebrow>
         </div>
 
         {/* Chairperson */}
@@ -47,31 +48,28 @@ export function Leadership() {
             IT <span className="text-gradient">Administration</span>
           </h3>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-text-secondary md:text-base">
-            The faculty and administration who guide the IT Committee's direction across ERP, web portals, short-term programmes, and AI initiatives.
+            The faculty and administration who guide the IT Committee’s direction across
+            ERP, web portals, short-term programmes, and AI initiatives.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
           {administration.map((p) => (
-            <figure
-              key={p.name}
-              data-reveal
-              className="group glass overflow-hidden rounded-xl"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden">
+            <figure key={p.name} data-reveal className="group glass overflow-hidden rounded-2xl">
+              <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={p.photo}
                   alt={p.name}
                   loading="lazy"
                   className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-void/25 transition-opacity duration-500 group-hover:opacity-0" />
+                <div className="absolute inset-0 bg-void/20 transition-opacity duration-500 group-hover:opacity-0" />
               </div>
               <figcaption className="p-4">
-                <p className="font-display text-sm font-medium leading-tight text-text-primary">
+                <p className="font-display text-base font-medium leading-tight text-text-primary">
                   {p.name}
                 </p>
-                <p className="mt-1 text-[11px] leading-tight text-accent-cyan">{p.role}</p>
+                <p className="mt-1 text-xs leading-snug text-accent-cyan">{p.role}</p>
               </figcaption>
             </figure>
           ))}

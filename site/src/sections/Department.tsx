@@ -2,7 +2,8 @@ import { Section, Eyebrow, Glow } from '@/components/primitives'
 import { itSupport } from '@/lib/content'
 import { useRevealReplay } from '@/lib/motion'
 
-export function Administration() {
+/** IT Department — the full-time professionals who run the institute's systems. */
+export function Department() {
   const ref = useRevealReplay<HTMLDivElement>({
     variant: 'fade-up',
     selector: '[data-reveal]',
@@ -10,7 +11,7 @@ export function Administration() {
   })
 
   return (
-    <Section id="administration" className="bg-void/60">
+    <Section id="department" className="bg-void/60">
       <Glow className="left-[-8%] top-[15%] h-[420px] w-[420px]" color="var(--color-accent-primary)" />
       <div ref={ref}>
         <div data-reveal>
@@ -20,23 +21,23 @@ export function Administration() {
           data-reveal
           className="max-w-3xl font-display text-3xl font-semibold tracking-tight text-text-primary sm:text-4xl md:text-5xl"
         >
-          The <span className="text-gradient">department</span> steering the committee.
+          The <span className="text-gradient">department</span> that keeps the campus running.
         </h2>
         <p data-reveal className="mt-5 max-w-2xl text-base leading-relaxed text-text-secondary md:text-lg">
-          The full-time professionals who run the institute's systems alongside the committee.
+          The full-time professionals who run the institute’s systems alongside the committee.
         </p>
 
-        <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
           {itSupport.map((p) => (
             <figure key={p.name} data-reveal className="group glass overflow-hidden rounded-2xl">
-              <div className="relative aspect-[4/5] overflow-hidden">
+              <div className="relative aspect-square overflow-hidden">
                 <img
                   src={p.photo}
                   alt={p.name}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-void/20 transition-opacity duration-500 group-hover:opacity-0" />
+                <div className="absolute inset-0 bg-void/25 transition-opacity duration-500 group-hover:opacity-0" />
               </div>
               <figcaption className="p-4">
                 <p className="font-display text-base font-medium leading-tight text-text-primary">

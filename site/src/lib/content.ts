@@ -294,7 +294,7 @@ export const sections = [
   { n: '02', label: 'What We Do', id: 'purpose' },
   { n: '03', label: 'Support', id: 'support' },
   { n: '04', label: 'Leadership', id: 'leadership' },
-  { n: '05', label: 'Administration', id: 'administration' },
+  { n: '05', label: 'IT Department', id: 'department' },
   { n: '06', label: 'Members', id: 'members' },
   { n: '07', label: 'Events', id: 'events' },
   { n: '08', label: 'Recruitment', id: 'recruitment' },

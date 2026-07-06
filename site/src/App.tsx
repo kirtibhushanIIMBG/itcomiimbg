@@ -8,7 +8,7 @@ import { Support } from '@/sections/Support'
 import { Members } from '@/sections/Members'
 import { Events } from '@/sections/Events'
 import { Leadership } from '@/sections/Leadership'
-import { Administration } from '@/sections/Administration'
+import { Department } from '@/sections/Department'
 import { Recruitment } from '@/sections/Recruitment'
 import { Contact } from '@/sections/Contact'
 
@@ -38,7 +38,7 @@ export default function App() {
       <Purpose />
       <Support />
       <Leadership />
-      <Administration />
+      <Department />
       <Members />
       <Events />
       <Recruitment />
